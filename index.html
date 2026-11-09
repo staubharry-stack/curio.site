@@ -711,9 +711,8 @@ body.work-page .nav-home-link:hover{opacity:1;transform:translateY(-2px);}
 /* ── Services 3-panel layout ── */
 #services{min-height:100vh;}
 #services .ip-body{padding:0!important;max-width:100%!important;}
-.srv-panels{display:grid;grid-template-columns:1fr 1fr 1fr;min-height:100vh;}
+.srv-panels{display:grid;grid-template-columns:1fr 1fr 1fr;min-height:100vh;gap:2px;background:var(--cream);}
 .srv-panel{position:relative;overflow:hidden;cursor:pointer;}
-.srv-panel+.srv-panel{border-left:1px solid rgba(245,240,232,.12);}
 .srv-panel-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s ease;}
 .srv-panel:hover .srv-panel-bg{transform:scale(1.04);}
 .srv-panel-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,10,10,.15) 0%,rgba(30,10,10,.65) 100%);transition:background .4s;}
