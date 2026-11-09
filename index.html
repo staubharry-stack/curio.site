@@ -693,42 +693,42 @@ body.work-page .nav-home-link:hover{opacity:1;transform:translateY(-2px);}
 .srvd-topbar{padding:80px 56px 24px;display:flex;align-items:center;}
 .srvd-back{display:inline-flex;align-items:center;gap:.5rem;font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);background:none;border:none;cursor:pointer;padding:0;transition:color .2s;}
 .srvd-back:hover{color:var(--text);}
-.srvd-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:24px 56px 56px;background:var(--cream);}
-.srvd-col{background:var(--cream);padding:3.5rem 3.5rem 3rem;border-radius:18px;border:2px solid var(--burg);}
+.srvd-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:24px 48px 56px;background:var(--cream);align-items:stretch;}
+.srvd-col{background:var(--cream);padding:3rem;border-radius:18px;border:2px solid var(--burg);display:flex;flex-direction:column;justify-content:space-between;}
 .srvd-col--dark{background:#3A0D0D;border:none;}
-.srvd-col-name{font-family:'Curio30',sans-serif;font-size:clamp(2.2rem,4vw,3.8rem);font-weight:300;letter-spacing:-.02em;color:var(--text);margin:0 0 .5rem;line-height:1.0;}
+.srvd-col-body{flex:1;}
+.srvd-col-name{font-family:'Curio30',sans-serif;font-size:clamp(2rem,3.6vw,3.4rem);font-weight:300;letter-spacing:-.02em;color:var(--text);margin:0 0 .4rem;line-height:1.0;}
 .srvd-col--dark .srvd-col-name{color:var(--cream);}
-.srvd-col-desc{font-family:'Curio30',sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 2rem;}
-.srvd-col--dark .srvd-col-desc{color:rgba(245,240,232,.35);}
-.srvd-list{list-style:disc;padding:0 0 0 1.1rem;margin:0 0 1.2rem;}
-.srvd-list li{font-family:'Curio30',sans-serif;font-size:.87rem;color:var(--text);line-height:1.75;padding:.65rem 0;border-bottom:1px solid var(--cream-dkr);}
+.srvd-col-desc{font-family:'Curio30',sans-serif;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 2rem;}
+.srvd-col--dark .srvd-col-desc{color:rgba(245,240,232,.4);}
+.srvd-list{list-style:none;padding:0;margin:0 0 .5rem;}
+.srvd-list li{font-family:'Curio30',sans-serif;font-size:.86rem;color:var(--text);line-height:1.5;padding:.7rem 0;border-bottom:1px solid var(--cream-dkr);}
 .srvd-list li:first-child{border-top:1px solid var(--cream-dkr);}
 .srvd-col--dark .srvd-list li{color:var(--cream);border-color:rgba(245,240,232,.12);}
 .srvd-col--dark .srvd-list li:first-child{border-color:rgba(245,240,232,.12);}
-.srvd-col--dark .srvd-list{color:var(--cream);list-style-color:var(--cream);}
-.srvd-timeline{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--cream-dkr);margin-bottom:2.5rem;}
+.srvd-timeline{display:flex;flex-direction:column;border-top:1px solid var(--cream-dkr);margin:1.5rem 0 2rem;}
 .srvd-col--dark .srvd-timeline{border-color:rgba(245,240,232,.12);}
-.srvd-trow{display:grid;grid-template-columns:7rem 1fr;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--cream-dkr);align-items:start;}
+.srvd-trow{display:grid;grid-template-columns:6.5rem 1fr;padding:.6rem 0;border-bottom:1px solid var(--cream-dkr);align-items:baseline;}
 .srvd-col--dark .srvd-trow{border-color:rgba(245,240,232,.12);}
-.srvd-trow span{font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding-top:.15rem;}
-.srvd-col--dark .srvd-trow span{color:rgba(245,240,232,.35);}
-.srvd-trow p{font-family:'Curio30',sans-serif;font-size:.82rem;color:var(--text);margin:0;line-height:1.7;}
+.srvd-trow span{font-family:'Curio30',sans-serif;font-size:.48rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);}
+.srvd-col--dark .srvd-trow span{color:rgba(245,240,232,.4);}
+.srvd-trow p{font-family:'Curio30',sans-serif;font-size:.82rem;color:var(--text);margin:0;line-height:1.5;}
 .srvd-col--dark .srvd-trow p{color:var(--cream);}
-.srvd-dl{display:inline-block;font-family:'Curio30',sans-serif;font-size:.52rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);border-bottom:1px solid currentColor;padding-bottom:.25rem;text-decoration:none;transition:opacity .2s;}
+.srvd-dl{display:inline-block;font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);border-bottom:1px solid currentColor;padding-bottom:.25rem;text-decoration:none;transition:opacity .2s;margin-top:2rem;}
 .srvd-col--dark .srvd-dl{color:var(--cream);}
 .srvd-dl:hover{opacity:.45;}
-.srvd-cta-row{text-align:center;padding:5rem 60px;border-top:2px solid var(--cream-dkr);}
-.srvd-cta-text{font-family:'Curio30',sans-serif;font-size:1.1rem;color:var(--muted);margin:0 0 1.5rem;font-weight:300;}
+.srvd-cta-row{text-align:center;padding:4rem 60px;border-top:1px solid var(--cream-dkr);}
+.srvd-cta-text{font-family:'Curio30',sans-serif;font-size:1rem;color:var(--muted);margin:0 0 1.5rem;font-weight:300;}
 .srvd-cta-btn{display:inline-block;font-family:'Curio30',sans-serif;font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream);background:var(--burg);padding:1rem 3.5rem;text-decoration:none;transition:opacity .2s;}
 .srvd-cta-btn:hover{opacity:.8;}
 @media(max-width:768px){
-  .srvd-topbar{padding:70px 24px 16px;}
-  .srvd-cols{grid-template-columns:1fr;}
-  .srvd-col{padding:2.5rem 24px;}
+  .srvd-topbar{padding:70px 20px 12px;}
+  .srvd-cols{grid-template-columns:1fr;padding:12px 20px 48px;gap:16px;}
+  .srvd-col{padding:2rem 1.4rem;border-radius:14px;overflow:hidden;}
+  .srvd-col-name{font-size:1.55rem;}
   .srvd-trow{grid-template-columns:5.5rem 1fr;}
-  .srvd-cta-row{padding:3.5rem 24px;}
+  .srvd-cta-row{padding:3rem 24px;}
 }
-
 /* ── Services 3-panel layout ── */
 #services{min-height:100vh;}
 #services .ip-body{padding:0!important;max-width:100%!important;}
@@ -1141,40 +1141,46 @@ body.light-page.services-panels-active .nav-logo .for-dark{display:block!importa
 
         <!-- ESSENTIAL -->
         <div class="srvd-col">
-          <h2 class="srvd-col-name">Essential</h2>
-          <p class="srvd-col-desc">Music Curation</p>
-          <ul class="srvd-list">
-            <li>Music matched to your venue's character, audience and atmosphere</li>
-            <li>Automated scheduling across your full trading day</li>
-            <li>Commercially licensed playback configured through Soundtrack</li>
-            <li>Licensing guidance included</li>
-            <li>Team onboarding &mdash; running independently from day one</li>
-            <li>2 playlists (~24h each) &middot; Single zone</li>
-          </ul>
-          <div class="srvd-timeline">
-            <div class="srvd-trow"><span>Day 1</span><p>Book &mdash; brief on your venue, trading hours and atmosphere</p></div>
-            <div class="srvd-trow"><span>Days 2&ndash;5</span><p>Setup &mdash; music selected, Soundtrack configured, schedule built</p></div>
-            <div class="srvd-trow"><span>Day 7</span><p>Live &mdash; music playing, team onboarded</p></div>
+          <div class="srvd-col-body">
+            <div>
+              <h2 class="srvd-col-name">Essential</h2>
+              <p class="srvd-col-desc">Music Curation</p>
+              <ul class="srvd-list">
+                <li>Music selected to suit your venue</li>
+                <li>Automated daily scheduling</li>
+                <li>Commercially licensed playback</li>
+                <li>Complete setup and team onboarding</li>
+                <li>2 playlists, 24 hours each</li>
+              </ul>
+              <div class="srvd-timeline">
+                <div class="srvd-trow"><span>Day 1</span><p>Brief</p></div>
+                <div class="srvd-trow"><span>Days 2&ndash;5</span><p>Setup</p></div>
+                <div class="srvd-trow"><span>Day 7</span><p>Live</p></div>
+              </div>
+            </div>
           </div>
           <a class="srvd-dl" href="curio-music-essential.pdf" download>Download Info Pack &#x2193;</a>
         </div>
 
         <!-- SIGNATURE -->
         <div class="srvd-col srvd-col--dark">
-          <h2 class="srvd-col-name">Signature</h2>
-          <p class="srvd-col-desc">Full-Service Music Curation</p>
-          <ul class="srvd-list">
-            <li>A distinct music identity for every venue</li>
-            <li>Playlists that move with the room &mdash; by time of day, day of week and season</li>
-            <li>Quarterly updates keeping your sound fresh and consistent</li>
-            <li>Two service tiers: Rotation and Resident</li>
-            <li>Group discounts for 5+ venues</li>
-            <li>Commercially licensed playback included</li>
-          </ul>
-          <div class="srvd-timeline">
-            <div class="srvd-trow"><span>Week 1</span><p>Listen &mdash; we get to know your venues, audiences and spaces</p></div>
-            <div class="srvd-trow"><span>Weeks 2&ndash;3</span><p>Design &mdash; distinct music identity and playlists built for each venue</p></div>
-            <div class="srvd-trow"><span>Week 4</span><p>Deliver &mdash; music live, team onboarded, quarterly cycle begins</p></div>
+          <div class="srvd-col-body">
+            <div>
+              <h2 class="srvd-col-name">Signature</h2>
+              <p class="srvd-col-desc">Full-Service Music Curation</p>
+              <ul class="srvd-list">
+                <li>Bespoke music identity and playlists</li>
+                <li>Tailored scheduling across every service</li>
+                <li>Quarterly music updates</li>
+                <li>Ongoing creative direction</li>
+                <li>Commercially licensed playback</li>
+              </ul>
+              <div class="srvd-timeline">
+                <div class="srvd-trow"><span>Week 1</span><p>Discover</p></div>
+                <div class="srvd-trow"><span>Weeks 2&ndash;3</span><p>Curate</p></div>
+                <div class="srvd-trow"><span>Week 4</span><p>Launch</p></div>
+              </div>
+            </div>
           </div>
           <a class="srvd-dl" href="curio-music-signature.pdf" download>Download Info Pack &#x2193;</a>
         </div>
