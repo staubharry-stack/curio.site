@@ -688,24 +688,45 @@ body.work-page .nav-home-link:hover{opacity:1;transform:translateY(-2px);}
 .srv-row-tag{font-family:'Curio30',sans-serif;font-size:.72rem;color:var(--muted);letter-spacing:.04em;}
 .srv-row-arr{font-family:'Curio30',sans-serif;font-size:1.3rem;color:var(--burg);flex-shrink:0;transition:transform .25s ease;}
 .srv-approach{padding-top:2rem;}
-.srv-back-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Curio30',sans-serif;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--burg);background:none;border:none;cursor:pointer;padding:0;margin-bottom:3rem;transition:opacity .2s;}
-.srv-back-btn:hover{opacity:.6;}
-.srv-detail-head{margin-bottom:3.5rem;}
-.srv-detail-title{font-family:'Curio30',sans-serif;font-size:clamp(2.8rem,6vw,6rem);font-weight:300;color:var(--text);line-height:1.0;margin:1rem 0 1.5rem;}
-.srv-detail-intro{font-family:'Curio30',sans-serif;font-size:.95rem;line-height:1.9;color:var(--muted);max-width:600px;}
-.srv-items{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--cream-dkr);border:1px solid var(--cream-dkr);margin-bottom:4rem;}
-.srv-item{background:var(--cream);padding:2.5rem;}
-.srv-item-num{font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.15em;color:var(--muted);margin-bottom:1rem;}
-.srv-item-title{font-family:'Curio30',sans-serif;font-size:1.3rem;font-weight:600;color:var(--burg);margin-bottom:.8rem;line-height:1.1;}
-.srv-item-desc{font-family:'Curio30',sans-serif;font-size:.88rem;line-height:1.85;color:var(--text);margin-bottom:1.2rem;}
-.srv-item-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.35rem;}
-.srv-item-list li{font-family:'Curio30',sans-serif;font-size:.78rem;color:var(--muted);line-height:1.6;padding-left:1rem;position:relative;}
-.srv-item-list li::before{content:'—';position:absolute;left:0;color:var(--muted);}
-.srv-steps-wrap{margin-top:1rem;}
+/* ── Service Detail Pages ── */
+.srv-detail{background:var(--cream);min-height:100vh;}
+.srvd-topbar{padding:80px 56px 24px;display:flex;align-items:center;}
+.srvd-back{display:inline-flex;align-items:center;gap:.5rem;font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);background:none;border:none;cursor:pointer;padding:0;transition:color .2s;}
+.srvd-back:hover{color:var(--text);}
+.srvd-cols{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--cream-dkr);}
+.srvd-col{background:var(--cream);padding:3.5rem 3.5rem 3rem;}
+.srvd-col--dark{background:var(--text);}
+.srvd-label{font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 .75rem;}
+.srvd-col--dark .srvd-label{color:rgba(245,240,232,.35);}
+.srvd-col-name{font-family:'Curio30',sans-serif;font-size:clamp(1.5rem,2.2vw,2rem);font-weight:300;letter-spacing:-.01em;color:var(--text);margin:0 0 2rem;line-height:1.15;}
+.srvd-col--dark .srvd-col-name{color:var(--cream);}
+.srvd-list{list-style:disc;padding:0 0 0 1.1rem;margin:0 0 1.2rem;}
+.srvd-list li{font-family:'Curio30',sans-serif;font-size:.87rem;color:var(--text);line-height:1.75;padding:.65rem 0;border-bottom:1px solid var(--cream-dkr);}
+.srvd-list li:first-child{border-top:1px solid var(--cream-dkr);}
+.srvd-col--dark .srvd-list li{color:var(--cream);border-color:rgba(245,240,232,.12);}
+.srvd-col--dark .srvd-list li:first-child{border-color:rgba(245,240,232,.12);}
+.srvd-col--dark .srvd-list{color:var(--cream);}
+.srvd-timeline{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--cream-dkr);margin-bottom:2.5rem;}
+.srvd-col--dark .srvd-timeline{border-color:rgba(245,240,232,.12);}
+.srvd-trow{display:grid;grid-template-columns:7rem 1fr;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--cream-dkr);align-items:start;}
+.srvd-col--dark .srvd-trow{border-color:rgba(245,240,232,.12);}
+.srvd-trow span{font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding-top:.15rem;}
+.srvd-col--dark .srvd-trow span{color:rgba(245,240,232,.35);}
+.srvd-trow p{font-family:'Curio30',sans-serif;font-size:.82rem;color:var(--text);margin:0;line-height:1.7;}
+.srvd-col--dark .srvd-trow p{color:var(--cream);}
+.srvd-dl{display:inline-block;font-family:'Curio30',sans-serif;font-size:.52rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);border-bottom:1px solid currentColor;padding-bottom:.25rem;text-decoration:none;transition:opacity .2s;}
+.srvd-col--dark .srvd-dl{color:var(--cream);}
+.srvd-dl:hover{opacity:.45;}
+.srvd-cta-row{text-align:center;padding:5rem 60px;border-top:2px solid var(--cream-dkr);}
+.srvd-cta-text{font-family:'Curio30',sans-serif;font-size:1.1rem;color:var(--muted);margin:0 0 1.5rem;font-weight:300;}
+.srvd-cta-btn{display:inline-block;font-family:'Curio30',sans-serif;font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream);background:var(--burg);padding:1rem 3.5rem;text-decoration:none;transition:opacity .2s;}
+.srvd-cta-btn:hover{opacity:.8;}
 @media(max-width:768px){
-  .srv-items{grid-template-columns:1fr;}
-  .srv-row-name{font-size:1.7rem;}
-  .srv-main-title,.srv-detail-title{font-size:2.4rem;}
+  .srvd-topbar{padding:70px 24px 16px;}
+  .srvd-cols{grid-template-columns:1fr;}
+  .srvd-col{padding:2.5rem 24px;}
+  .srvd-trow{grid-template-columns:5.5rem 1fr;}
+  .srvd-cta-row{padding:3.5rem 24px;}
 }
 
 /* ── Services 3-panel layout ── */
@@ -1113,41 +1134,56 @@ body.light-page.services-panels-active .nav-logo .for-dark{display:block!importa
 
     <!-- DETAIL: Music Curation -->
     <div class="srv-detail" id="srv-music" style="display:none">
-      <button class="srv-back-btn" onclick="hideService()">&#8592; Services</button>
-      <div class="srv-detail-head">
-        <span class="srv-eyebrow">01 &mdash; What We Do</span>
-        <h1 class="srv-detail-title">Music<br>Curation</h1>
-        <p class="srv-detail-intro">Great music, properly licensed. A distinct sound identity for your brand &mdash; considered, seamless and always evolving.</p>
+      <div class="srvd-topbar">
+        <button class="srvd-back" onclick="hideService()">&#8592; Services</button>
       </div>
-      <div class="srv-items">
-        <div class="srv-item">
-          <p class="srv-item-num">01</p>
-          <h3 class="srv-item-title">Sound Identity</h3>
-          <p class="srv-item-desc">A unique sound profile designed to match your brand's character, energy and audience. Considered, seamless &amp; evolving.</p>
-          <ul class="srv-item-list">
-            <li>Brand audio strategy</li>
-            <li>Playlist curation</li>
-            <li>Licensed playback systems</li>
-            <li>Ongoing updates</li>
+      <div class="srvd-cols">
+
+        <!-- ESSENTIAL -->
+        <div class="srvd-col">
+          <p class="srvd-label">Essential</p>
+          <h2 class="srvd-col-name">Music Curation</h2>
+          <ul class="srvd-list">
+            <li>Music matched to your venue's character, audience and atmosphere</li>
+            <li>Automated scheduling across your full trading day</li>
+            <li>Commercially licensed playback configured through Soundtrack</li>
+            <li>Licensing guidance included</li>
+            <li>Team onboarding &mdash; running independently from day one</li>
+            <li>2 playlists (~24h each) &middot; Single zone</li>
           </ul>
+          <div class="srvd-timeline">
+            <div class="srvd-trow"><span>Day 1</span><p>Book &mdash; brief on your venue, trading hours and atmosphere</p></div>
+            <div class="srvd-trow"><span>Days 2&ndash;5</span><p>Setup &mdash; music selected, Soundtrack configured, schedule built</p></div>
+            <div class="srvd-trow"><span>Day 7</span><p>Live &mdash; music playing, team onboarded</p></div>
+          </div>
+          <a class="srvd-dl" href="curio-music-essential.pdf" download>Download Info Pack &#x2193;</a>
         </div>
-        <div class="srv-item">
-          <p class="srv-item-num">02</p>
-          <h3 class="srv-item-title">Sonic Brand Audit</h3>
-          <p class="srv-item-desc">A strategic review of how your brand sounds today and where it should go. Clear, actionable, defined.</p>
-          <ul class="srv-item-list">
-            <li>Current sound environment review</li>
-            <li>Brand sound identity assessment</li>
-            <li>Strategic recommendations</li>
-            <li>Defined roadmap and scope</li>
+
+        <!-- SIGNATURE -->
+        <div class="srvd-col srvd-col--dark">
+          <p class="srvd-label">Signature</p>
+          <h2 class="srvd-col-name">Full-Service Music Curation</h2>
+          <ul class="srvd-list">
+            <li>A distinct music identity for every venue</li>
+            <li>Playlists that move with the room &mdash; by time of day, day of week and season</li>
+            <li>Quarterly updates keeping your sound fresh and consistent</li>
+            <li>Two service tiers: Rotation and Resident</li>
+            <li>Group discounts for 5+ venues</li>
+            <li>Commercially licensed playback included</li>
           </ul>
+          <div class="srvd-timeline">
+            <div class="srvd-trow"><span>Week 1</span><p>Listen &mdash; we get to know your venues, audiences and spaces</p></div>
+            <div class="srvd-trow"><span>Weeks 2&ndash;3</span><p>Design &mdash; distinct music identity and playlists built for each venue</p></div>
+            <div class="srvd-trow"><span>Week 4</span><p>Deliver &mdash; music live, team onboarded, quarterly cycle begins</p></div>
+          </div>
+          <a class="srvd-dl" href="curio-music-signature.pdf" download>Download Info Pack &#x2193;</a>
         </div>
+
       </div>
-      <div class="steps">
-        <div class="step"><p class="step-n">01</p><h3 class="step-t">Listen</h3><p class="step-d">We get to know your venue, its audience and what makes the space unique.</p></div>
-        <div class="step"><p class="step-n">02</p><h3 class="step-t">Design</h3><p class="step-d">A distinct music identity built around your atmosphere and trading hours.</p></div>
-        <div class="step"><p class="step-n">03</p><h3 class="step-t">Deliver</h3><p class="step-d">Music goes live, your team is onboarded and everything runs independently.</p></div>
-        <div class="step"><p class="step-n">04</p><h3 class="step-t">Evolve</h3><p class="step-d">Regular update cycles. Keeping it fresh, relevant and in tune with the room.</p></div>
+
+      <div class="srvd-cta-row">
+        <p class="srvd-cta-text">Ready to get started?</p>
+        <a href="mailto:harry@curio.site" class="srvd-cta-btn">Get in Touch</a>
       </div>
     </div>
 
