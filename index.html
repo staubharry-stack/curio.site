@@ -40,7 +40,7 @@ body.light-page .nav-logo .for-light{display:block;}
 .nav-links a{font-family:'Curio30',sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cream);text-decoration:none;cursor:none;opacity:.55;transition:opacity .25s,color .3s;position:relative;}
 .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:100%;height:1px;background:currentColor;transition:right .3s;}
 .nav-links a:hover{opacity:1;}.nav-links a:hover::after{right:0;}
-body.light-page .nav-links a{color:var(--burg);}body.about-page .nav-links a{color:var(--burg);opacity:.7;}body.about-page .nav-links a:hover{opacity:1;}body.about-page .nav-logo .for-light{display:none;}body.about-page .nav-logo .for-dark{display:block;}
+body.light-page .nav-links a{color:var(--burg);}body.about-page .nav-links a{color:var(--burg);opacity:.7;}body.about-page .nav-links a:hover{opacity:1;}
 #homeScroll{scroll-snap-type:y mandatory;overflow-y:scroll;height:100vh;position:relative;background:radial-gradient(ellipse 130% 55% at 12% 10%,rgba(140,35,35,.26) 0%,transparent 52%),radial-gradient(ellipse 75% 48% at 88% 6%,rgba(80,15,15,.2) 0%,transparent 48%),radial-gradient(ellipse 95% 68% at 48% 44%,rgba(100,22,22,.16) 0%,transparent 58%),radial-gradient(ellipse 110% 52% at 18% 76%,rgba(120,28,28,.18) 0%,transparent 54%),radial-gradient(ellipse 90% 62% at 82% 90%,rgba(60,10,10,.22) 0%,transparent 48%),var(--burg-deep);}
 section{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;}
 #hero,#statement,#work-teaser,#contact-home{background:transparent;scroll-snap-align:start;scroll-snap-stop:always;}
@@ -798,7 +798,7 @@ body.light-page.services-panels-active .nav-logo .for-dark{display:block!importa
 .art-caption-title em{font-style:italic;}
 .art-caption-type{font-family:'Curio30',sans-serif;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
 @media(max-width:768px){.art-caption{padding:2rem 1.4rem 1.5rem;}.art-caption-title{font-size:.78rem;}.art-caption-type{font-size:.45rem;}}
-.work-tile[data-tag="art"] .work-tile-name,.work-tile[data-tag="art"] .work-tile-loc,.work-tile[data-tag="art"] .work-tile-cta{color:var(--burg)!important;}@media(min-width:769px){.art-dive-wrap{max-width:860px;margin:0 auto;}}@media(max-width:768px){body.about-page #navLogo,body.work-page #navLogo{display:flex!important;opacity:1!important;pointer-events:all!important;}body.about-page .srvd-topbar a[onclick*="showHome"]{display:none!important;}}@media(max-width:768px){body.light-page:not(.about-page):not(.services-panels-active):not(.dive-active) #navLogo{display:flex!important;opacity:1!important;pointer-events:all!important;}body.light-page.services-panels-active #navLogo{display:flex!important;opacity:1!important;pointer-events:all!important;}body.light-page.services-panels-active #hamburger{color:var(--cream)!important;}}@media(min-width:769px){.nav-home-link{display:none!important;}body.work-page #navLogo{order:-1;}}</style>
+.work-tile[data-tag="art"] .work-tile-name,.work-tile[data-tag="art"] .work-tile-loc,.work-tile[data-tag="art"] .work-tile-cta{color:var(--burg)!important;}@media(min-width:769px){.art-dive-wrap{max-width:860px;margin:0 auto;}}@media(max-width:768px){body.about-page #navLogo,body.work-page #navLogo{display:flex!important;opacity:1!important;pointer-events:all!important;}body.about-page .srvd-topbar a[onclick*="showHome"]{display:none!important;}}@media(max-width:768px){body.light-page:not(.about-page):not(.services-panels-active):not(.dive-active) #navLogo{display:flex!important;opacity:1!important;pointer-events:all!important;}body.light-page.services-panels-active #navLogo{display:flex!important;opacity:1!important;pointer-events:all!important;}body.light-page.services-panels-active #hamburger{color:var(--cream)!important;}}@media(min-width:769px){.nav-home-link{display:none!important;}body.work-page #navLogo{order:-1;}body.about-page #navLogo{order:-1;}body.about-page .srvd-topbar a[onclick*="showHome"]{display:none!important;}}</style>
 </head>
 <body>
 <div class="cur" id="cur"></div>
@@ -861,10 +861,10 @@ body.light-page.services-panels-active .nav-logo .for-dark{display:block!importa
   <div style="padding:0 48px 56px;background:var(--cream);">
     <div class="srvd-col" style="max-width:700px;margin:0 auto;">
       <div class="about-text">
-        <p>Curio is a multi-sensory design studio.</p>
-        <p>Working at the intersection of sound, space and experience. Shaping the seen and unseen details that make a place feel unique.</p>
-        <p>We design interiors, specify audio systems, source art and build the sonic identities that give a space its atmosphere.</p>
-        <p>Our clients are brands, venues, hotels and private collectors who understand that the details most people never consciously notice are the ones that are felt and remembered. We build those details with intention.</p>
+        <p>Curio is a multi-sensory design studio working at the intersection of sound, space and experience.</p>
+        <p>Specialising in music curation, art curation and spatial design, we shape the seen and unseen details that give a space its identity, atmosphere and character.</p>
+        <p>From building sonic identities and curating art collections to designing interiors and specifying audio systems, our approach considers how every element works together to create a cohesive experience.</p>
+        <p>We work with brands, hospitality venues, hotels and private clients who understand that the smallest details often leave the most lasting impressions.</p>
         <p class="about-anchor">Sound is our anchor. Everything else follows.</p>
         <p style="margin-top:2rem;"><strong>Curio is a studio by Harry Staub.</strong><br><strong>Additional work at <a href="https://hazxx.com" target="_blank" rel="noopener" style="color:inherit;">hazxx.com</a></strong></p>
       </div>
